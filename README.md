@@ -62,11 +62,7 @@ Together, these modules form a complete pipeline: discover rules, optimize them,
 
 **Topics:** Supervised Learning (Logistic Regression, Classification)
 
-**Input:** Current market indicators and a pre-trained classifier. Features include:
-- RSI and MACD (defined in Module 1)
-- **Volatility:** How much prices fluctuate—high volatility means bigger swings
-- **Volume trend:** Whether trading activity is increasing or decreasing
-- **Price momentum:** The rate and direction of recent price changes
+**Input:** Current market indicators and a pre-trained classifier. Features include RSI and MACD (defined in Module 1), plus volatility, volume trend, and price momentum (see Glossary).
 
 **Output:** Predicted **market regime** (the overall market condition):
 - **Bull:** Prices trending upward
@@ -77,7 +73,7 @@ Also outputs confidence score (how certain the prediction is) and recommends whi
 
 **Integration:** This module bridges strategy discovery and execution. Different strategies perform better in different conditions—a momentum strategy might excel in bull markets but fail in sideways markets. By classifying conditions, the system picks the right tool for the job.
 
-**Prerequisites:** Supervised Learning (Weeks 7+): Logistic regression, classification, training/test splits. Training labels derived from historical price trends.
+**Prerequisites:** Supervised Learning (Week 7): Logistic regression, classification, training/test splits. Training labels derived from historical price trends.
 
 ---
 
@@ -95,7 +91,7 @@ Also outputs confidence score (how certain the prediction is) and recommends whi
 
 **Integration:** This is the final decision module. It determines how much capital to allocate given all upstream information. The **RL agent** learns through simulated historical trades. Unlike fixed rules, it adapts—learning to size positions aggressively when conditions favor the strategy and conservatively when uncertain.
 
-**Prerequisites:** Reinforcement Learning (Weeks 7+): **MDP** (Markov Decision Process—a framework for modeling decisions where outcomes depend on current state and chosen action), Q-learning, state/action spaces, reward design.
+**Prerequisites:** Reinforcement Learning (Week 7.5): **MDP** (Markov Decision Process—a framework for modeling decisions where outcomes depend on current state and chosen action), Q-learning, state/action spaces, reward design.
 
 ---
 
