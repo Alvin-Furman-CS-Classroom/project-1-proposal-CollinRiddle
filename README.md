@@ -40,7 +40,7 @@ Together, these modules form a complete pipeline: discover rules, optimize them,
 
 **Integration:** This module provides the starting population for Module 3's genetic algorithm. Rather than starting evolution from random strategies, we seed it with promising candidates discovered through search, making optimization faster and more effective.
 
-**Prerequisites:** Informed Search (Weeks 1.5-3): A*, Beam Search, **heuristic design** (a heuristic is an educated guess that helps the algorithm prioritize which options to explore first, avoiding the need to test every possibility).
+**Prerequisites:** Informed Search (Weeks 1.5-3): A*, Beam Search, **heuristic design**.
 
 ---
 
@@ -91,7 +91,7 @@ Also outputs confidence score (how certain the prediction is) and recommends whi
 
 **Integration:** This is the final decision module. It determines how much capital to allocate given all upstream information. The **RL agent** learns through simulated historical trades. Unlike fixed rules, it adapts—learning to size positions aggressively when conditions favor the strategy and conservatively when uncertain.
 
-**Prerequisites:** Reinforcement Learning (Week 7.5): **MDP** (Markov Decision Process—a framework for modeling decisions where outcomes depend on current state and chosen action), Q-learning, state/action spaces, reward design.
+**Prerequisites:** Reinforcement Learning (Week 7.5): **MDP** (Markov Decision Process), Q-learning, state/action spaces, reward design.
 
 ---
 
